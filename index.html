@@ -25,15 +25,22 @@
         QUIZ
     </h1>
 </header>
-
-    <div class="quiz-area">
-        <div class="controls-area">
-            <button class="btn btn--big btn---red">
-                <i class="fas fa-plus"></i>
-            </button>
-            <button class="btn btn--big btn---green"></button>
-            <button class="btn btn--big btn---yellow"></button>
-            <button class="btn btn--big btn---orange"></button>
+<!-- game-area section-->
+ <main>
+<div class="game-area hide" id="game-container">
+    <div id="question-counter">
+        Question <span id="current-question">1</span> of 10
+    </div>
+    <div class="question-area" id="question">Question here!</div>
+        <div id="controls-area">
+            <button class="answer-btn">answer A</button>
+            <button class="answer-btn">answer B</button>
+            <button class="answer-btn">answer C</button>
+            <button class="answer-btn">answer D</button> 
+            <audio id="correct-sound" class="hide">
+                <source src="sounds/correct-sound.mp3" type="audio/mp3" />
+            </audio>
+            <source id="incorrect-sound"
         </div>
     </div>
 
