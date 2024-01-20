@@ -40,18 +40,90 @@
             <audio id="correct-sound" class="hide">
                 <source src="sounds/correct-sound.mp3" type="audio/mp3" />
             </audio>
-            <source id="incorrect-sound"
-        </div>
+            <audio id="incorrect-sound" class="hide">
+                <source src="sounds/incorrect-sound.mp3" />
+            </audio>
+         </div>
+         <div class="option-btns">
+            <button class="next-question-btn hide" id="next-btn">
+                Next Question
+            </button>
+            <button class="next-question-btn hide" id="results-btn">
+                Check results!
+            </button>
+         </div>
     </div>
-
     <div class="score-area">
         <p clas="scores">Correct Answers <span id="score">0</span></p>
         <p clas="scores">Incorrect Answers <span id="incorrect">0</span></p>
-
-
     </div>
+    <!--Instructions-area section -->
+    <div class="instructions-area" id="instructions">
+        <h2>
+            <img
+            id="luffy-img"
+            src="assets/images/luffy.png"
+            alt="A picture of luffy"
+            aria-label="a picture of luffy"
+            />
+        
+    </div>
+    "Try your best Nakama with the instructions you have here"
+</h2>
+<p class="instructions">
+    select the warlord you wish to face (difficulty)
+</p>
+<p class="instruction">
+    you will receive 10 questions with 4 answers each. You must choose ONE
+</p>
+<p class="instruction">You cannot change your answer after clicking</p>
+<p class="instruction">
+    If you wish to restart the quiz, click on the One Piece logo
+</p>
+<p class="instruction">Don`t have any regerts, no matter what haapens.</p>
+<div class="game-type">
+    <button
+    class="game-type-btn"
+    id="easy-game"
+    onclick="gamestartSound()"
+    >
+    <img
+    src="assets/images/Crocodile_Anime_Infobox.webp"
+    class="btn-img"
+    alt="A picture of Crocodile for easy difficulty"
+    />Crocodile (Easy)
+</button>
 
+<button
+class="game-type-btn"
+id="meduim-game"
+onclick="gamestartSound()"
+>
+<img
+src="assets/images/Moriah_Marineford.webp"
+class="btn-img"
+alt="A picture of Gecko moriah for meduim difficulty"
+aria-label="a picture of gecko moriah for meduim difficulty"
+/>Gecko Moriah (meduim)
+</button>
 
+<button
+class="game-type-type-btn"
+id="hard-game"
+onclick="gamestartSound()"
+>
+<img
+src="assets/images/Doflamingo_Face_Palm_29.webp"
+class="btn-img"
+alt="A picture of Doflamingo for hard difficulty"
+aria-label="a picture of Doflamingo for hard difficulty"
+/>Doflamingo (Hard)
+</button>
+<audio id="gamestart-sound">
+    <source src="sounds/gamestart-sound.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
 
     <script src="assets/js/script.js"></script>
 </body>
