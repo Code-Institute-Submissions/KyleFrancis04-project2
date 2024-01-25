@@ -1,0 +1,137 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    background: 
+    url(../assets/images/)
+    center center / cover
+    no-repeat
+    fixed;
+}
+/* header section with logo*/
+h1 {
+    text-transform: uppercase;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333b;
+}
+
+#heading-logo {
+    height: 100px;
+    width:100px;
+    margin: 0px 5px;
+}
+/* styles for Question counter section*/
+#question-counter {
+    width: 240px;
+    height:7vh;
+    background-color: #333e;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+}
+
+#current-question {
+    padding: 2px;
+    font-weight: 600px;
+}
+/* styles for game-area section*/
+.question-area {
+    width:90%;
+    max-width: 600px;
+    height: 30vh;
+    margin: 15px auto;
+    padding: 20px 8px;
+    background-color: #333e;
+}
+
+.answer-btn {
+    height: 50px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/*gamearea answer btns, restart button and next button*/
+.option-btns, .restart-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.next-question-btn {
+    height: 60px;
+    width: 35;
+    font-size: 1.3em;
+    background-color: #dddb;
+    cursor: pointer;
+}
+
+#restart-button {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+/* instruction area styles*/
+.instructions-area {
+    width: 90;
+    max-width: 600px;
+    height: 100%;
+    margin: 15px auto;
+    padding: 20px 8px;
+    background-color: #333b;
+}
+
+.instruction {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1.5px dashed #fffb;
+}
+
+#question {
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+#garp-img {
+    width: 100px;
+    height: 130px;
+    padding-right: 8px;
+}
+
+.question-area, .answer-btn, .instruction-area, .game-type-btn, .next-question-btn, .answer-btn
+border-radius: 15px;
+
+
