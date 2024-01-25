@@ -284,6 +284,11 @@ footer {
         margin:10px;
     }
 
-    #
+    #luffy-res-img {
+        height:180px;
+    }
+    .results-area {
+        font-size: 1.7em;
+    }
 }
 
