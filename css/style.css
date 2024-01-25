@@ -131,7 +131,99 @@ h1 {
     padding-right: 8px;
 }
 
-.question-area, .answer-btn, .instruction-area, .game-type-btn, .next-question-btn, .answer-btn
+.question-area, .answer-btn, .instruction-area, .game-type-btn, .next-question-btn, .results-area, #restart-button {
 border-radius: 15px;
+border: 1.5px solid #000;
+}
+
+.game-type-btn, .answer-btn {
+    width: 90%;
+    display: flex;
+    background-color: #dddb;
+    cursor: pointer;
+}
+/*effects for the btns*/
+.game-type-btn:hover, .answer-btn:hover, .next-question-btn:hover {
+    background-color: #eeec;
+}
+
+.game-type-btn:active, .answer-btn:active, .next-question-btn:active, #restart-button:active {
+    background-color: #33fc;
+}
+/*game-type area styles*/
+.game-type {
+    padding-top:30px;
+}
+
+.game-type-btn {
+    height: 90px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    font-style: oblique;
+    font-weight: 700;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.btn-img {
+    height:100px;
+    display:block;
+}
+/*for JS functions*/
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #ADD8E6;
+}
+
+.wrong {
+    background-color: #c00c;
+}
+.disable {
+    pointer-events: none;
+}
+
+/* results area styles */
+.results-area {
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    margin: 15px auto;
+    padding: 10px 8px;
+    background-color: #333b;
+    font-size: 1.3em;
+}
+
+#results-message {
+    padding: 20px 8px;
+    background-color: #111a;
+    text-align: center;
+}
+
+#garp-res-img {
+    height: 130px;
+    position: relative;
+    left:40px;
+}
+
+#restart-button {
+    width:70%;
+    max-width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddb;
+    cursor: pointer;
+}
+
+/* Footer styles */
+
 
 
